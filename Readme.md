@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Виктория Бондаренко](https://up.htmlacademy.ru/htmlcss/29/user/407547).
-* Наставник: [Александр Лялихов](https://up.htmlacademy.ru/htmlcss/29/user/983003)
+* Наставник: [Александр Лялихов](https://up.htmlacademy.ru/htmlcss/29/user/983003).
 
 ---
 
