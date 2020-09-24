@@ -1,136 +1,179 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин «Nerds»</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img src="https://picsum.photos/id/2/166/66" width="160" height="66" alt="Логотип интернет магазина «Nerds»">
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="index.html" class="main-header-logo">
+        <img src="https://picsum.photos/id/2/166/66" class="logo-pic" width="160" height="66"
+          alt="Логотип интернет магазина «Nerds»">
       </a>
-      <ul>
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a>Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="site-navigation">
+        <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Студия</a></li>
+        <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Клиенты</a></li>
+        <li class="site-navigation-item"><a class="site-navigation-item-link active">Магазин</a></li>
+        <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Контакты</a></li>
       </ul>
       <ul>
-        <li><a href="#">Корзина</a></li>
+        <li class="cart"><a href="#" class="cart-link">Корзина</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Магазин готовых шаблонов</h1>
-    <section>
+  <main class="page-catalog container">
+    <h1 class="page-catalog-title">Магазин готовых шаблонов</h1>
+    <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <!-- Здесь будет форма фильтра -->
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость:</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+        </fieldset>
+        <button type="submit" class="button filter-button">Показать</button>
+      </form>
     </section>
-    <section>
+    <section class="sort">
       <h2 class="visually-hidden">Список готовых шаблонов</h2>
-      <h2>Сортировать:</h2>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
+      <h2 class="sort-title">Сортировать:</h2>
+      <ul class="sort-list">
+        <li class="sort-list-item"><a class="sort-list-item-link active" href="http://htmlbook.ru/">По цене</a></li>
+        <li class="sort-list-item"><a class="sort-list-item-link" href="#">По типу</a></li>
+        <li class="sort-list-item"><a class="sort-list-item-link" href="#">По названию</a></li>
       </ul>
-      <ul>
-        <li><a href="#">По убыванию</a></li>
-        <li><a href="#">По возрастанию</a></li>
+      <ul class="sort-list-setting">
+        <li class="sort-list-setting-item down"><a href="#">По убыванию</a></li>
+        <li class="sort-list-setting-item up"><a href="#">По возрастанию</a></li>
       </ul>
     </section>
-    <section>
-      <ul>
-        <li>
+    <section class="catalog">
+      <ul class="catalog-list">
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="Sedona">
           </a>
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">Sedona</h3>
+            </a>
+            <p>Информационный сайт для туристов</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="Pink App">
           </a>
-          <h3>Pink App</h3>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">Pink App</h3>
+            </a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="Barbershop">
           </a>
-          <h3>Barbershop</h3>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">Barbershop</h3>
+            </a>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="Mishka">
           </a>
-          <h3>Mishka</h3>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">Mishka</h3>
+            </a>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="A Plus">
           </a>
-          <h3>A Plus</h3>
-          <p>Лендинг курсов повышения квалификации</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">A Plus</h3>
+            </a>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <a href="product.html">
             <img src="#" width="360" height="580" alt="Кваст">
           </a>
-          <h3>Кваст</h3>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <button type="button">9 900 ₽</button>
+          <div class="catalog-item-popup">
+            <a class="catalog-item-title-link-popup" href="#">
+              <h3 class="catalog-item-title">Кваст</h3>
+            </a>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+          </div>
         </li>
       </ul>
       <!--Pagination-->
-      <ul>
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+      <ul class="pagination-list">
+        <li class="pagination-item"><a class="pagination-item-link active">1</a></li>
+        <li class="pagination-item"><a class="pagination-item-link" href="#">2</a></li>
+        <li class="pagination-item"><a class="pagination-item-link" href="#">3</a></li>
+        <li class="pagination-item"><a class="pagination-item next" href="#">Следующая</a></li>
       </ul>
     </section>
   </main>
 
-  <footer>
-    <section>
+  <footer class="page-footer main-footer">
+    <section class="footer-map">
       <h2 class="visually-hidden">Карта проезда</h2>
       <!-- Здесь будет карта проезда -->
     </section>
-    <section>
-      <h2><span class="visually-hidden">Контакты</span> Nёrds Design Studio</h2>
-      <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br>тел. +7 (812) 275-75-75</p>
-      <button type="button">Напишите нам</button>
+    <section class="footer-contacts">
+      <h2 class="footer-contacts-title"><span class="visually-hidden">Контакты</span> Nёrds Design Studio</h2>
+      <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+      <p class="footer-contacts-phone"><a class="contacts-phone-link" href="+78122757575">тел. +7 (812) 275-75-75</a>
+      </p>
+      <button class="button" type="button">Напишите нам</button>
     </section>
-    <section>
+    <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+      <ul class="footer-social-list">
+        <li class="footer-social-list-item"><a class="social-button" href="#">Вконтакте</a></li>
+        <li class="footer-social-list-item"><a class="social-button" href="#">Фейсбук</a></li>
+        <li class="footer-social-list-item"><a class="social-button" href="#">Инстаграм</a></li>
       </ul>
     </section>
-    <section>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+    <section class="footer-profit">
+      <p class="footer-profit-text">Давайте дружить, это выгодно!</p>
+      <p class="footer-profit-discount">Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
 
   <!-- Popup -->
-  <section>
+  <section class="modal">
     <h2>Напишите нам</h2>
     <!-- Здесь будет форма -->
+    <button class="button" type="button">Отправить</button>
     <button type="button">Закрыть</button>
   </section>
 </body>
