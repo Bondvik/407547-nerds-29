@@ -1,27 +1,27 @@
 /* Variables */
 
 :root {
-  --black: #000000;
-  --gunmetal: #283136;
-  --gainsboro: #DFDFDF;
-  --light-grey: #D5D5D5;
-  --charcoal: #444444;
-  --dim-gray: #666666;
-  --white-smoke: #EEEEEE;
-  --gray: #DBDBDB;
-  --white: #ffffff;
+  --color-black: #000000;
+  --color-gunmetal: #283136;
+  --color-gainsboro: #DFDFDF;
+  --color-light-grey: #D5D5D5;
+  --color-charcoal: #444444;
+  --color-dim-gray: #666666;
+  --color-white-smoke: #EEEEEE;
+  --color-gray: #DBDBDB;
+  --color-white: #ffffff;
 
-  --bittersweet: #FB565A;
-  --cinnabar: #E74246;
-  --persian-red: #D7373B;
+  --color-bittersweet: #FB565A;
+  --color-cinnabar: #E74246;
+  --color-persian-red: #D7373B;
   
-  --caribbean-green: #00CA74;
-  --jade: #00BC6C;
-  --green: #00AA62;
+  --color-caribbean-green: #00CA74;
+  --color-jade: #00BC6C;
+  --color-green: #00AA62;
 
-  --cream-can: #EFC849;
-  --bright-sun: #EAB534;
-  --gold-tips: #E5A722;
+  --color-cream-can: #EFC849;
+  --color-bright-sun: #EAB534;
+  --color-gold-tips: #E5A722;
 }
 
 
@@ -35,8 +35,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--gunmetal);
-  background-color: var(--white);
+  color: var(--color-gunmetal);
+  background-color: var(--color-white);
 }
 
 a {
@@ -54,8 +54,8 @@ img {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: var(--white-smoke);
-  color: var(--black);
+  background-color: var(--color-white-smoke);
+  color: var(--color-black);
 }
 
 .site-navigation,
@@ -72,12 +72,12 @@ img {
 .cart-link,
 .site-navigation-item-link:visited,
 .cart-link:visited {
-  color: var(--black);
+  color: var(--color-black);
 } 
 
 .site-navigation-item-link:hover,
 .cart-link:hover {
-  color: var(--bittersweet);
+  color: var(--color-bittersweet);
 }
 
 .site-navigation-item-link:active,
@@ -86,7 +86,7 @@ img {
 }
 
 .site-navigation-item-link.active {
-  border-bottom: 2px solid var(--bittersweet);
+  border-bottom: 2px solid var(--color-bittersweet);
 }
 
 /* Slider */
@@ -95,7 +95,7 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  color: var(--black);
+  color: var(--color-black);
 }
 
 /* Button */
@@ -106,39 +106,39 @@ img {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  color: var(--white);
+  color: var(--color-white);
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--bittersweet);
+  background-color: var(--color-bittersweet);
   border: none;
 }
 
 .service-item-button-pink:hover {
-  background-color: var(--cinnabar);
+  background-color: var(--color-cinnabar);
 }
 
 .service-item-button-pink:active {
-  background-color: var(--persian-red);
+  background-color: var(--color-persian-red);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .service-item-button-green:hover {
-  background-color: var(--jade);
+  background-color: var(--color-jade);
 }
 
 .service-item-button-green:active {
-  background-color: var(--green);
+  background-color: var(--color-green);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .service-item-button-yellow:hover {
-  background-color: var(--bright-sun);
+  background-color: var(--color-bright-sun);
 }
 
 .service-item-button-yellow:active {
-  background-color: var(--gold-tips);
+  background-color: var(--color-gold-tips);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
 }
@@ -153,11 +153,11 @@ img {
 }
 
 .service-item-button-green {
-  background-color: var(--caribbean-green);
+  background-color: var(--color-caribbean-green);
 }
 
 .service-item-button-yellow {
-  background-color: var(--cream-can);
+  background-color: var(--color-cream-can);
 }
 
 /* About */
@@ -166,7 +166,7 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  color: var(--black);
+  color: var(--color-black);
 }
 
 .about-list-title {
@@ -191,7 +191,7 @@ img {
 
 .footer-contacts-adress,
 .footer-contacts-phone {
-  color: var(--dim-gray);
+  color: var(--color-dim-gray);
 
 }
 
@@ -219,18 +219,18 @@ img {
 
 .filter-button,
 .filter-button:link:visited {
-  background-color: var(--white-smoke);
-  color: var(--black);
+  background-color: var(--color-white-smoke);
+  color: var(--color-black);
   font-weight: 500;
   line-height: 18px;
 }
 
 .filter-button:hover {
-  background-color: var(--gainsboro);
+  background-color: var(--color-gainsboro);
 }
 
 .filter-button:active {
-  background-color: var(--light-grey);
+  background-color: var(--color-light-grey);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   
 }
@@ -266,7 +266,7 @@ img {
 
 .sort-list-item-link:active,
 .sort-list-item-link.active {
-  color: var(--black);
+  color: var(--color-black);
 }
 
 /* Catalog */
@@ -280,8 +280,8 @@ img {
 
 .catalog-item-popup {
   line-height: 18px;
-  color: var(--dim-gray);
-  background-color: var(--white-smoke);
+  color: var(--color-dim-gray);
+  background-color: var(--color-white-smoke);
 
 }
 
@@ -291,12 +291,12 @@ img {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--black);
+  color: var(--color-black);
 }
 
 
 .catalog-item-title-link-popup:hover {
-  color: var(--bittersweet);
+  color: var(--color-bittersweet);
 }
 
 .catalog-item-title-link-popup:active {
@@ -304,11 +304,11 @@ img {
 }
 
 .button-catalog-price-popup:hover {
-  background-color: var(--cinnabar);
+  background-color: var(--color-cinnabar);
 }
 
 .button-catalog-price-popup:active {
-  background-color: var(--persian-red);
+  background-color: var(--color-persian-red);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -326,22 +326,22 @@ img {
 .pagination-item.next,
 .pagination-item-link:visited,
 .pagination-item.next:visited {
-  color: var(--black);
-  background-color: var(--white-smoke);
+  color: var(--color-black);
+  background-color: var(--color-white-smoke);
 }
 
 .pagination-item-link.active {
   background-color: rgba(0, 0, 0, 0.0001);
-  border: 3px solid var(--gray);
+  border: 3px solid var(--color-gray);
 }
 
 .pagination-item-link:hover {
-  background-color: var(--gainsboro);
+  background-color: var(--color-gainsboro);
 }
 
 .pagination-item-link:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: var(--light-grey);
+  background-color: var(--color-light-grey);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
@@ -352,10 +352,10 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  color: var(--black);
+  color: var(--color-black);
 }
 
 .footer-profit-discount {
   line-height: 22px;
-  color: var(--charcoal);
+  color: var(--color-charcoal);
 }
