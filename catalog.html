@@ -11,7 +11,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a href="index.html" class="main-header-logo">
         <img src="img/nerds-logo.svg" class="logo-pic" width="160" height="66" alt="Логотип дизайн-студии «Nerds»">
       </a>
@@ -21,128 +21,130 @@
         <li class="site-navigation-item"><a class="site-navigation-item-link active">Магазин</a></li>
         <li class="site-navigation-item"><a href="#" class="site-navigation-item-link">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="site-cart">
         <li class="cart"><a href="#" class="cart-link">Корзина</a></li>
       </ul>
     </nav>
   </header>
-  <main class="page-catalog container">
+  <main class="main">
     <h1 class="page-catalog-title">Магазин готовых шаблонов</h1>
-    <section class="filters">
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма фильтра -->
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость:</legend>
-        </fieldset>
-        <fieldset>
-          <legend>Сетка:</legend>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-        </fieldset>
-        <button type="submit" class="button filter-button">Показать</button>
-      </form>
-    </section>
-    <section class="sort">
-      <h2 class="visually-hidden">Список готовых шаблонов</h2>
-      <h2 class="sort-title">Сортировать:</h2>
-      <ul class="sort-list">
-        <li class="sort-list-item"><a class="sort-list-item-link active" href="http://htmlbook.ru/">По цене</a></li>
-        <li class="sort-list-item"><a class="sort-list-item-link" href="#">По типу</a></li>
-        <li class="sort-list-item"><a class="sort-list-item-link" href="#">По названию</a></li>
-      </ul>
-      <ul class="sort-list-setting">
-        <li class="sort-list-setting-item down"><a href="#">По убыванию</a></li>
-        <li class="sort-list-setting-item up"><a href="#">По возрастанию</a></li>
-      </ul>
-    </section>
-    <section class="catalog">
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-sedona.png" width="358" height="580" alt="Шаблон Sedona">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">Sedona</h3>
+    <div class="wrapper-main-content container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- Здесь будет форма фильтра -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+          </fieldset>
+          <button type="submit" class="button filter-button">Показать</button>
+        </form>
+      </section>
+      <section class="sort">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <h2 class="sort-title">Сортировать:</h2>
+        <ul class="sort-list">
+          <li class="sort-list-item"><a class="sort-list-item-link active" href="http://htmlbook.ru/">По цене</a></li>
+          <li class="sort-list-item"><a class="sort-list-item-link" href="#">По типу</a></li>
+          <li class="sort-list-item"><a class="sort-list-item-link" href="#">По названию</a></li>
+        </ul>
+        <ul class="sort-list-setting">
+          <li class="sort-list-setting-item down"><a href="#">По убыванию</a></li>
+          <li class="sort-list-setting-item up"><a href="#">По возрастанию</a></li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-sedona.png" width="358" height="580" alt="Шаблон Sedona">
             </a>
-            <p>Информационный сайт для туристов</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-pink.png" width="358" height="576" alt="Шаблон Pink App">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">Pink App</h3>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">Sedona</h3>
+              </a>
+              <p>Информационный сайт для туристов</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-pink.png" width="358" height="576" alt="Шаблон Pink App">
             </a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-barbershop.png" width="364" height="582" alt="Шаблон Barbershop">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">Barbershop</h3>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">Pink App</h3>
+              </a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-barbershop.png" width="364" height="582" alt="Шаблон Barbershop">
             </a>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-mishka.png" width="358" height="574" alt="Шаблон Mishka">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">Mishka</h3>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">Barbershop</h3>
+              </a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-mishka.png" width="358" height="574" alt="Шаблон Mishka">
             </a>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-aplus.png" width="358" height="573" alt="Шаблон A Plus">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">A Plus</h3>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">Mishka</h3>
+              </a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-aplus.png" width="358" height="573" alt="Шаблон A Plus">
             </a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <a href="product.html">
-            <img src="img/img-kvast.png" width="358" height="574" alt="Шаблон Кваст">
-          </a>
-          <div class="catalog-item-popup">
-            <a class="catalog-item-title-link-popup" href="#">
-              <h3 class="catalog-item-title">Кваст</h3>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">A Plus</h3>
+              </a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="product.html">
+              <img src="img/img-kvast.png" width="358" height="574" alt="Шаблон Кваст">
             </a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
-          </div>
-        </li>
-      </ul>
-      <!--Pagination-->
-      <ul class="pagination-list">
-        <li class="pagination-item"><a class="pagination-item-link active">1</a></li>
-        <li class="pagination-item"><a class="pagination-item-link" href="#">2</a></li>
-        <li class="pagination-item"><a class="pagination-item-link" href="#">3</a></li>
-        <li class="pagination-item"><a class="pagination-item next" href="#">Следующая</a></li>
-      </ul>
-    </section>
+            <div class="catalog-item-popup">
+              <a class="catalog-item-title-link-popup" href="#">
+                <h3 class="catalog-item-title">Кваст</h3>
+              </a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <button type="button" class="button button-catalog-price-popup">9 900 ₽</button>
+            </div>
+          </li>
+        </ul>
+        <!--Pagination-->
+        <ul class="pagination-list">
+          <li class="pagination-item"><a class="button pagination-item-link active">1</a></li>
+          <li class="pagination-item"><a class="button pagination-item-link" href="#">2</a></li>
+          <li class="pagination-item"><a class="button pagination-item-link" href="#">3</a></li>
+          <li class="pagination-item"><a class="button pagination-item-next" href="#">Следующая</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
-  <footer class="page-footer main-footer">
+  <footer class="main-footer">
     <section class="footer-map">
       <h2 class="visually-hidden">Карта проезда</h2>
       <!-- Здесь будет карта проезда -->
@@ -153,27 +155,29 @@
       <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-contacts-phone"><a class="contacts-phone-link" href="+78122757575">тел. +7 (812) 275-75-75</a>
       </p>
-      <button class="button" type="button">Напишите нам</button>
+      <button class="button contact-send" type="button">Напишите нам</button>
     </section>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-list-item"><a class="social-button" href="#">Вконтакте</a></li>
-        <li class="footer-social-list-item"><a class="social-button" href="#">Фейсбук</a></li>
-        <li class="footer-social-list-item"><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-    </section>
-    <section class="footer-profit">
-      <p class="footer-profit-text">Давайте дружить, это выгодно!</p>
-      <p class="footer-profit-discount">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="footer-content container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-list-item"><a class="social-button" href="#">Вконтакте</a></li>
+          <li class="footer-social-list-item"><a class="social-button" href="#">Фейсбук</a></li>
+          <li class="footer-social-list-item"><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </section>
+      <section class="footer-profit">
+        <p class="footer-profit-text">Давайте дружить, это выгодно!</p>
+        <p class="footer-profit-discount">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
 
   <!-- Popup -->
   <section class="modal">
     <h2>Напишите нам</h2>
     <!-- Здесь будет форма -->
-    <button class="button" type="button">Отправить</button>
+    <button class="button modal-form-send" type="button">Отправить</button>
     <button type="button">Закрыть</button>
   </section>
 </body>
