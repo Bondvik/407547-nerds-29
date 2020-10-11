@@ -131,7 +131,10 @@ img {
 }
 
 .sort {
+  display: grid;
+  grid-template-columns: 400px auto auto;
   grid-area: sort;
+  margin-bottom: 48px;
 }
 
 .catalog {
@@ -170,6 +173,28 @@ img {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.sort-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-list-setting {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .footer-social-list {
@@ -524,6 +549,18 @@ img {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.sort-list-setting-item.down{
+  padding-right: 18px;
+}
+
+.sort-link-down,
+.sort-link-up {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: var(--color-dim-gray);
 }
 
 .sort-list-item {
