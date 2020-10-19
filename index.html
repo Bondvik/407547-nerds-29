@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -32,23 +33,35 @@
     <section class="slider">
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
-        <ul class="slider-list">
-          <li class="slider-item pic-1">
-            <h3 class="slider-item-title">Долго, дорого,<br>скрупулезно.</h3>
-            <p class="slider-item-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="button slider-item-link">Узнать больше</a>
-          </li>
-          <li class="slider-item pic-2">
-            <h3 class="slider-item-title">Любим математику<br>как никто другой</h3>
-            <p class="slider-item-description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
-            <a href="#" class="button slider-item-link">Узнать больше</a>
-          </li>
-          <li class="slider-item pic-3">
-            <h3 class="slider-item-title">Только ночь,<br>только хардкор</h3>
-            <p class="slider-item-description"Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="button slider-item-link">Узнать больше</a>
-          </li>
-        </ul>
+        <div class="slider-wrapper">
+          <input type="radio" id="btn-1" name="toggle" checked>
+          <input type="radio" id="btn-2" name="toggle">
+          <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-list">
+              <div class="slider-item pic-1">
+                <h3 class="slider-item-title">Долго, дорого,<br>скрупулезно.</h3>
+                <p class="slider-item-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                <a href="#" class="button slider-item-link">Узнать больше</a>
+              </div>
+              <div class="slider-item pic-2">
+                <h3 class="slider-item-title">Любим математику<br>как никто другой</h3>
+                <p class="slider-item-description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
+                <a href="#" class="button slider-item-link">Узнать больше</a>
+              </div>
+              <div class="slider-item pic-3">
+                <h3 class="slider-item-title">Только ночь,<br>только хардкор</h3>
+                <p class="slider-item-description">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+                <a href="#" class="button slider-item-link">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End slider -->
@@ -64,7 +77,7 @@
         <li class="service-item">
           <img class="service-item-pic" src="img/applications.png" width="300" height="146" alt="Приложения">
           <h3 class="service-item-title">Приложения</h3>
-          <p class="service-item-description">Покорите топ-10 приложений в<br>AppStore и Google Play</p>
+          <p class="service-item-description">Покорите топ-10 приложений<br>в AppStore и Google Play</p>
           <a class="button service-item-button-green" href="#">Заказать</a>
         </li>
         <li class="service-item">
@@ -75,6 +88,7 @@
         </li>
       </ul>
     </section>
+    
     <section class="about container">
       <div class="about-text">
         <h2 class="visually-hidden">О нас</h2>
@@ -106,6 +120,7 @@
         </table>
       </div>
     </section>
+    
     <section class="partners container">
       <h2 class="visually-hidden">Партнеры</h2>
       <ul class="partners-list">
@@ -132,17 +147,21 @@
       </ul>
     </section>
   </main>
+  
   <footer class="main-footer">
     <section class="footer-map">
       <h2 class="visually-hidden">Карта проезда</h2>
-      <!-- Здесь будет карта проезда -->
-      <img src="img/map.jpg" class="map-pic" width="1440" height="416" alt="Местонахождение дизайн-студии «Nerds» на карте">
-    </section>
-    <section class="footer-contacts">
-      <h2 class="footer-contacts-title"><span class="visually-hidden">Контакты</span> Nёrds Design Studio</h2>
-      <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-      <p class="footer-contacts-phone"><a class="contacts-phone-link" href="+78122757575">тел. +7 (812) 275-75-75</a></p>
-      <button class="button contact-send" type="button">Напишите нам</button>
+      <!-- <div class="pin"></div> -->
+      <img src="img/map.jpg" class="map-pic" width="100%" height="416" alt="Местонахождение дизайн-студии «Nerds» на карте">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1602587080852!5m2!1sru!2sua" width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="wrapper-footer-contacts">
+      <section class="footer-contacts">
+        <h2 class="footer-contacts-title"><span class="visually-hidden">Контакты</span> Nёrds Design Studio</h2>
+        <p class="footer-contacts-adress">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-contacts-phone"><a class="contacts-phone-link" href="+78122757575">тел. +7 (812) 275-75-75</a></p>
+        <button class="button contact-send" type="button">Напишите нам</button>
+      </section>
+    </div>
     </section>
     <div class="footer-content container">
       <section class="footer-social">
@@ -161,7 +180,7 @@
               <span class="visually-hidden">Фейсбук</span>
               <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-              </svg>  
+              </svg>          
             </a>
           </li>
           <li class="footer-social-list-item">
@@ -194,6 +213,7 @@
           <label for="send-email">Ваш email:</label>
           <input  class="form-email" id="send-email" type="email" name="email" placeholder="email@example.com">
         </p>
+
       </div>
       <p class="send-message">
         <label for="send-message">Текст письма:</label>
@@ -203,6 +223,6 @@
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+  <script src="js/send.js"></script>
 </body>
-
 </html>
