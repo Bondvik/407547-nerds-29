@@ -5,6 +5,13 @@
 * Browsers: last 2 version,not dead,not ie <= 11
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Variables */
 
 :root {
@@ -149,11 +156,11 @@ img {
   grid-template-areas:
   "about-text about-quality-img"
   "about-list-content about-quality";
-  grid-template-columns: auto 360px;
+  grid-template-columns: auto 362px;
   grid-template-rows: minmax(208px, -webkit-max-content) auto;
   grid-template-rows: minmax(208px, max-content) auto;
   align-content: start;
-  grid-gap: 36px;
+  grid-gap: 35px;
   margin-bottom: 49px;
 }
 
@@ -252,7 +259,8 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 7px;
+  padding-top: 10px;
+  padding-left: 7px;
 
 }
 
@@ -282,11 +290,18 @@ img {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   height: 180px;
+
 }
+
+.partner-item-link {
+  display: flex;
+  justify-content: center;
+}
+
 
 .sort-list {
   display: flex;
@@ -323,7 +338,7 @@ img {
   list-style: none;
   align-items: center;
   height: 40px;
-  padding-left: 16px;
+  padding-left: 13px;
   background-color: var(--color-tundora);
   opacity: 0.12;
 }
@@ -374,6 +389,7 @@ img {
 .site-navigation-item:nth-last-child() {
   margin-right: 0;
 }
+
 
 .site-navigation-item-link,
 .cart-link,
@@ -462,7 +478,8 @@ img {
 }
 
 .slider-item-description {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
+  line-height: 25px;
 }
 
 
@@ -619,11 +636,7 @@ img {
 }
 
 .pagination-item-next {
-  padding-top: 14px;
-  padding-bottom: 12px;
-  padding-left: 78px;
-  padding-right: 78px;
-  border: 3px solid var(--color-white-smoke);
+    padding: 17px 77px 15px 79px;
 }
 
 .pagination-item-link {
@@ -650,7 +663,7 @@ img {
   background-color: var(--color-bittersweet);
   padding-left: 44px;
   padding-right: 44px;
-  margin-top: 33px;
+  margin-top: 34px;
 }
 
 /* Services */
@@ -674,7 +687,7 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 19px;
+  margin-top: 18px;
 }
 
 .service-item-description {
@@ -696,14 +709,14 @@ img {
 }
 
 .about-description {
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
+  line-height: 25px;
 }
 
 .about-list-title {
-  margin: 0;
+  margin: 0 0 23px 0;
   padding: 0;
-  margin-bottom: 23px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -728,13 +741,13 @@ img {
 .about-quality-img {
   background-image: url("../img/nerds-illustration-1.png");
   background-repeat: no-repeat;
+  background-position: 2px 0;
 }
 
 
 .about-quality-table-title {
-  margin: 0;
+  margin: 0 0 26px 4px;
   padding: 0;
-  margin-bottom: 24px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -744,17 +757,27 @@ img {
   width: 100%;
 }
 
+
 .feature-percent {
+  width: 30.33333%;
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
 }
 
+
 .feature-percent sup {
-  top: -14px;
+  top: -15px;
   font-size: 26px;
   line-height: 40px;
 }
+
+.feature-text {
+  line-height: 19px;
+  padding-top: 8px;
+  text-align: left;
+}
+
 
 /* Partners */
 
@@ -766,14 +789,25 @@ img {
 
 .partner-item {
   position: relative;
-  padding: 46px;
+  width: 260px;
+  box-sizing: border-box;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.partner-item:nth-child(1) {
+  padding-top: 14px;
+}
+
+.partner-item:nth-child(4) {
+  padding-top: 5px;
 }
 
 .partner-item::after{
   content: "";
   position: absolute;
-  top: -18px;
-  right: -10px;
+  top: 0;
+  right: -21px;
   bottom: 0;
   width: 2px;
   height: 52px;
@@ -788,6 +822,7 @@ img {
 }
 
 .partner-item-pic {
+  display: block;
   opacity: 0.2;
 }
 
@@ -843,12 +878,12 @@ img {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border: none;
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 53px;
+  margin-bottom: 54px;
 }
 
 .filter legend {
@@ -859,6 +894,7 @@ img {
   text-transform: uppercase;
 }
 
+
 .filter ul {
   padding: 0;
   margin: 0;
@@ -868,14 +904,14 @@ img {
 
 .filter-item legend {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 31px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .filter-option {
-  margin-bottom: 22px;
-  padding-left: 35px;
+  margin-bottom: 21px;
+  padding-left: 36px;
 }
 
 .filter-option label {
@@ -920,7 +956,7 @@ img {
   content: "";
   position: absolute;
   left: -36px;
-  top: -5px;
+  top: -2px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -981,7 +1017,7 @@ img {
   border: 8px solid var(--color-white);
   background-color: var(--color-dark-gray);
   border-radius: 50%;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -1001,7 +1037,9 @@ img {
 
 .price-controls input {
   width: 60px;
-  padding: 10px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   margin-left: 10px;
   text-align: center;
   color: var(--color-gunmetal);
@@ -1069,7 +1107,13 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-left: 2px;
 }
+
+.sort-list-item:first-child {
+  padding-left: 0;
+}
+
 
 .sort-list-item-link,
 .sort-list-item-link:visited {
@@ -1119,11 +1163,11 @@ img {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 618px;
-  width: 360px;
+  width: 358px;
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .catalog-item:hover .catalog-item-popup{
@@ -1177,7 +1221,7 @@ img {
 
 
 .pagination-item {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .pagination-item:last-child {
@@ -1196,6 +1240,8 @@ img {
   background-color: rgba(0, 0, 0, 0.0001);
   border: 3px solid var(--color-gray);
   padding-top: 14px;
+  padding-left: 17px;
+  padding-right: 19px;
   padding-bottom: 12px;
 }
 
@@ -1229,6 +1275,18 @@ img {
 }
 
 .footer-map iframe {
+  z-index: 3;
+}
+
+.pin {
+  background-image: url("../img/map-marker.png");
+  background-position:  0% 100%;
+  background-repeat: no-repeat;
+  width: 231px;
+  height: 190px;
+  position: absolute;
+  top: 9px;
+  left: 50%;
   z-index: 2;
 }
 
@@ -1239,7 +1297,7 @@ img {
   width: 319px;
   height: 308px;
   box-sizing: border-box;
-  padding: 48px 50px 47px 50px;
+  padding: 47px 50px 47px 50px;
   background-color: var(--color-white);
 }
 
@@ -1251,11 +1309,12 @@ img {
 }
 
 .footer-contacts-title {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 }
 
 .footer-contacts-adress {
-  margin-bottom: 8px;
+  line-height: 18px;
+  margin-bottom: 15px;
 }
 
 /* Footer Social Buttons */
@@ -1316,7 +1375,7 @@ img {
   bottom: auto;
   width: 760px;
   background-color: var(--color-white);
-  padding-top: 63px;
+  padding-top: 64px;
   padding-bottom: 84px;
   padding-right: 100px;
   padding-left: 100px;
@@ -1327,9 +1386,9 @@ img {
 
 .modal-send h2 {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
   font-size: 45px;
-  line-height: 53px;
+  line-height: 55px;
 }
 
 
@@ -1343,8 +1402,14 @@ img {
 .send-item,
 .send-message {
   font-weight: 700;
-  margin-bottom: 10px;
+
 }
+
+.send-message {
+  margin-top: 19px;
+  margin-bottom: 42px;
+}
+
 
 .send-item {
   width: 360px;
@@ -1353,15 +1418,12 @@ img {
 .send-item label,
 .send-message label {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .send-item input {
   width: 360px;
-  padding-top: 16px;
-  padding-right: 14px;
-  padding-bottom: 16px;
-  padding-left: 16px;
+  padding: 14px 14px 12px 16px;
   font-weight: 400;
   border: 2px solid var(--color-iron);
   border-radius: 3px;
@@ -1370,8 +1432,9 @@ img {
 
 .send-message textarea {
   width: 100%;
-  padding-top: 16px;
-  padding-left: 16px;
+  min-height: 118px;
+  padding-top: 14px;
+  padding-left: 15px;
   border: 2px solid var(--color-iron);
   border-radius: 3px;
   box-sizing: border-box;
@@ -1411,7 +1474,7 @@ img {
 
 .modal-close {
   position: absolute;
-  top: 78px;
+  top: 80px;
   right: 90px;
   width: 21px;
   height: 21px;
