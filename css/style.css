@@ -115,7 +115,7 @@ img {
   "header"
   "main"
   "footer";
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto 1fr auto;
   align-content: start;
 }
 
@@ -282,7 +282,8 @@ img {
   position: absolute;
   display: flex;
   bottom: 95px;
-  width: 100%;
+  width: 88px;
+  left: calc(50% - 44px);
   justify-content: center;
   z-index: 2;
 }
@@ -549,6 +550,7 @@ img {
   padding-bottom: 15px;
   border-radius: 3px;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* Button Link */
@@ -664,6 +666,17 @@ img {
   padding-left: 44px;
   padding-right: 44px;
   margin-top: 34px;
+}
+.contact-send:hover,
+.button-modal-form-send:hover {
+  background-color: var(--color-cinnabar);
+}
+
+.contact-send:active,
+.button-modal-form-send:active {
+  background-color: var(--color-persian-red);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Services */
@@ -1245,11 +1258,13 @@ img {
   padding-bottom: 12px;
 }
 
-.pagination-item-link:hover {
+.pagination-item-link:hover,
+.pagination-item-next:hover {
   background-color: var(--color-gainsboro);
 }
 
-.pagination-item-link:active {
+.pagination-item-link:active,
+.pagination-item-next:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: var(--color-light-grey);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
