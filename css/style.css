@@ -808,11 +808,11 @@ img {
   padding-top: 2px;
 }
 
-.partner-item:nth-child(1) {
+.partner-item.html-academy {
   padding-top: 14px;
 }
 
-.partner-item:nth-child(4) {
+.partner-item.mishka {
   padding-top: 5px;
 }
 
@@ -1258,12 +1258,12 @@ img {
   padding-bottom: 12px;
 }
 
-.pagination-item-link:hover,
+.pagination-item-link:not(.active):hover,
 .pagination-item-next:hover {
   background-color: var(--color-gainsboro);
 }
 
-.pagination-item-link:active,
+.pagination-item-link:not(.active):active,
 .pagination-item-next:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: var(--color-light-grey);
@@ -1287,6 +1287,7 @@ img {
 .map-pic {
   position: absolute;
   z-index: 1;
+  height: 416px;
 }
 
 .footer-map iframe {
@@ -1465,8 +1466,7 @@ img {
   border-color: var(--color-black);
 }
 
-.send-item input:invalid,
-.send-message textarea:invalid {
+.send-form .notValid {
   border-color: var(--color-cinnabar);
 }
 

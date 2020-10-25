@@ -36,11 +36,33 @@ sendClose.addEventListener("click", function (evt) {
   sendPopup.classList.remove("modal-error");
 });
 
+sendName.addEventListener('focusout', function (evt) {
+  if(evt.target.value.trim() === '') {
+    sendName.classList.add("notValid");
+  } else {
+    sendName.classList.remove("notValid");
+  }
+})
+
+sendEmail.addEventListener('focusout', function (evt) {
+  if(evt.target.value.trim() === '') {
+    sendEmail.classList.add("notValid");
+  } else {
+    sendEmail.classList.remove("notValid");
+  }
+})
+
+sendMessage.addEventListener('focusout', function (evt) {
+  if(evt.target.value.trim() === '') {
+    sendMessage.classList.add("notValid");
+  } else {
+    sendMessage.classList.remove("notValid");
+  }
+})
+
 sendForm.addEventListener("submit", function (evt) {
   if (!sendName.value || !sendEmail.value || !sendMessage.value) {
     evt.preventDefault();
-    sendPopup.classList.add("modal-error");
-    sendPopup.offsetWidth = loginPopup.offsetWidth;
     sendPopup.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
