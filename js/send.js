@@ -17,7 +17,6 @@ try {
   isStorageSupport = false;
 }
 
-
 contactSend.addEventListener("click", function (evt) {
   evt.preventDefault();
   sendPopup.classList.add("modal-show");
@@ -62,6 +61,15 @@ sendMessage.addEventListener('focusout', function (evt) {
 
 sendForm.addEventListener("submit", function (evt) {
   if (!sendName.value || !sendEmail.value || !sendMessage.value) {
+    if (sendName.value.trim() === '') {
+      sendName.classList.add("notValid");
+    }
+    if (sendEmail.value.trim() === '') {
+      sendEmail.classList.add("notValid");
+    }
+    if (sendMessage.value.trim() === '') {
+      sendMessage.classList.add("notValid");
+    }
     evt.preventDefault();
     sendPopup.classList.add("modal-error");
   } else {
@@ -71,6 +79,8 @@ sendForm.addEventListener("submit", function (evt) {
     
   }
 });
+
+
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
