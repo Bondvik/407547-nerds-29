@@ -35,7 +35,7 @@ sendClose.addEventListener("click", function (evt) {
   sendPopup.classList.remove("modal-error");
 });
 
-sendName.addEventListener('focusout', function (evt) {
+sendName.addEventListener("focusout", function (evt) {
   if(evt.target.value.trim() === '') {
     sendName.classList.add("notValid");
   } else {
@@ -43,7 +43,7 @@ sendName.addEventListener('focusout', function (evt) {
   }
 })
 
-sendEmail.addEventListener('focusout', function (evt) {
+sendEmail.addEventListener("focusout", function (evt) {
   if(evt.target.value.trim() === '') {
     sendEmail.classList.add("notValid");
   } else {
@@ -51,7 +51,7 @@ sendEmail.addEventListener('focusout', function (evt) {
   }
 })
 
-sendMessage.addEventListener('focusout', function (evt) {
+sendMessage.addEventListener("focusout", function (evt) {
   if(evt.target.value.trim() === '') {
     sendMessage.classList.add("notValid");
   } else {
